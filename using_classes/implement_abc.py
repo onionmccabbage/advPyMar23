@@ -21,3 +21,4 @@ if __name__ == '__main__':
     tri = Shape('triangle')
 
     print(sqr) # this will use __str__
+    print(f'The name of the imported class is {AbscractShape.__name__}')

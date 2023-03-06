@@ -16,4 +16,4 @@ class AbscractShape():
 
 
 if __name__ == '__main__':
-    pass
+    print('this always runs')
