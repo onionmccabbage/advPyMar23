@@ -18,3 +18,9 @@ if __name__ == '__main__':
     # we can unpack any iterable
     gen = (x*x for x in range(3))
     fn(*gen)
+
+    # dictionary unpacking
+    d = {'x':0, 'y':1, 'z':2}
+    fn(*d) # try to unpack the dictionary - we get the KEYS
+    # double-asterisk will upack the VALUES of a dictionary
+    fn(**d) # try to unpack the dictionary - we get the VALUES
