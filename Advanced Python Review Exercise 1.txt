@@ -1,0 +1,32 @@
+Advanced Python Review Exercise 1
+=================================
+First, write a function to find the square root of a positive integer
+  sqrt = n**0.5 # returns square root of n
+Check for a sys.argv and if missing ask the user for a number 'n' 
+  e.g. n = input('enter a positive integer ')
+Validate the sys.argv[1] or the user-entered value is a positive numeric integer 
+  (decide what to do if it is not)
+Use 'map' to print the square roots of the numbers from 1 to 'n' (to 2 d.p.)
+
+Next, implement a function which takes a single parameter and reports if it is a square number 
+(i.e. return True if the parameter is a square nubmer or False if it is not)
+Use this as a filter-function to take the numbers -100 to 100 inclusive
+and return only those values which are square numbers
+
+Import the 'show_args' method from this morning and use it to decorate these functions
+
+Optional
+--------
+In a separate module write a class which encapsulates the functions you wrote above
+  (Either copy-paste the functions as methods of your class or import them to use in the class)
+Instances of the class should take min/max values (with sensible defaults)
+Write class methods which use these functions to apply map, filter and reduce to numbers between min and max
+
+Override the __str__ method so class instances can print nicely
+Provide docstrings for your classes and methods
+
+Super Optional
+--------------
+Make 'get' calls to https://jsonplaceholder.typicode.com/photos/{n}
+  where {n} is a number yielded from a map object or a filter object above
+Only make calls to the first three values yielded

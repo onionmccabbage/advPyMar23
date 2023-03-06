@@ -7,6 +7,9 @@ Python Advanced
 All my code will be here:
   https://github.com/onionmccabbage/advPyMar23
 
+Course Website:
+  https://s3.eu-west-1.amazonaws.com/neueda.conygre.com/Sites/Ericsson_Advanced_Python/site/index.html
+
 9:30 start
 11:00 coffee
 12:30 lunch
@@ -20,14 +23,14 @@ All my code will be here:
 Python code lives in classes or in functions, in modules, which live in packages (folders)
 
 Monday
-- intro and welcome
+> intro and welcome
   - what do you currently know
   - what do you want to know
-- abstract and concrete classes
-- name mangled members
-- if __name__== '__main__': revisited
-- using decorators
-- functional programming: map, filter and reduce
+> abstract and concrete classes
+> name mangled members
+> if __name__== '__main__': revisited
+> using decorators
+> functional programming: map, filter and reduce
 - Loading local and remote data (requests)
 - after lunch review
 - instrinsics
@@ -50,6 +53,7 @@ Tuesday
   ask questions, help each other, share code (screen-share)
 
 Wednesday
+- logging...
 - context manager - switch context e.g. for handling data input and output
 - networking server/client (microservices)
 - overview of Flask

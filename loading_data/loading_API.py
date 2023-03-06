@@ -2,7 +2,7 @@
 # these days we use the 'requests' library
 import requests # may need to pip isntall requests
 import sys # we will use this to spot any system argument variables
-
+import argparse # a useful tool for dealing with sys.argv values
 
 def makeCall(cat='users', id=1): # some sensible defaults
     '''retrieve some data from an APPI end-point'''
