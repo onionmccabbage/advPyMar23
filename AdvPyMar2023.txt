@@ -4,6 +4,8 @@ Python Advanced
  6-9 March 2023
  Toby Dussek
 
+All my code will be here:
+  https://github.com/onionmccabbage/advPyMar23
 
 9:30 start
 11:00 coffee
@@ -21,7 +23,6 @@ Monday
 - intro and welcome
   - what do you currently know
   - what do you want to know
-- classes 
 - abstract and concrete classes
 - name mangled members
 - if __name__== '__main__': revisited
