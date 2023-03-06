@@ -1,0 +1,32 @@
+Advanced Python Review Exercise 1 until about 2:25-ish then show-and-tell
+=================================
+Write a function to find the square root of a positive integer
+  sqrt = n**0.5 # returns square root of n
+Ask the user for a number 'n' e.g. n = input('enter a positive integer)
+Validate it is a positive numeric integer (decide what to do if it is not)
+Print the square roots of the numbers from 1 to 'n' using map
+
+Implement a function which takes a single parameter and reports if it is a square number 
+(i.e. return True or False)
+Use this as a filter-function to take the numbers -100 to 100 inclusive
+and return only those values which are square numbers
+
+Import the 'show_args' method from this morning and use it to decorate these functions
+
+Optional
+--------
+In a separate module write a class which incorporates the functions you wrote above
+Instances of the class should take min/max values (with sensible defaults)
+The class methods should then apply map, filter or reduce to this range (min/max) 
+
+Override the __str__ method so the class instances can print nicely
+Provide docstrings for your classes and methods
+
+Super Optional
+--------------
+Write your own decorator-function which takes a function as an input 
+and nicely displays some intrinsics of that function
+(such as __name__, __doc__, __module__, __dict__ and __str__)
+
+Write an abstract base class which encapsulates properties for 'min' and 'max' and also at least one method. 
+Architect your class so it inherits from this abstract base class

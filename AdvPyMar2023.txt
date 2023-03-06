@@ -33,10 +33,12 @@ Monday
 > functional programming: map, filter and reduce
 - Loading local and remote data (requests)
 - after lunch review
+  show what you built
 - instrinsics
 - comprehensions, generators and yield
 
 Tuesday
+- how to make use of break-out rooms
 - functional programming: parameters
 - processing text/json
   - json.loads() takes JSON and returns Python structure
