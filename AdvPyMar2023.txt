@@ -32,10 +32,11 @@ Monday
 > using decorators
 > functional programming: map, filter and reduce
 - Loading local and remote data (requests)
-- after lunch review
+> after lunch review
   show what you built
-- instrinsics
+> instrinsics
 - comprehensions, generators and yield
+- importing json from a .json file
 
 Tuesday
 - how to make use of break-out rooms
