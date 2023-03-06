@@ -1,5 +1,6 @@
-from my_decorators import show_args
+from my_decorators import show_args, show_intrinsics
 
+@show_intrinsics
 def is_square(number):
     '''
     determine if a value is a square number
