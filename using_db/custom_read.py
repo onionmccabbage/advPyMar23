@@ -16,7 +16,7 @@ def custom_readDB():
     st = f'''
     SELECT creature, count, cost
     FROM zoo
-    WHERE creature "%{whichCreature}%"
+    WHERE creature LIKE "%{whichCreature}%"
     '''   
     # careful - suppose someone wrote malicious code - we MUST validate
     # now we execute our statement against our database access object

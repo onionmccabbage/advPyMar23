@@ -1,5 +1,5 @@
 Advanced Python Review 2 
-========================
+======================== at least an hour, maybe all the way to 3:00
 
 In a new package, write modules to implement a 'posts' service, with a database
 You can use the following API to get a very large number of 'posts':

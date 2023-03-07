@@ -36,7 +36,7 @@ Monday
   show what you built
 > instrinsics
 - comprehensions, generators and yield
-- importing json from a .json file
+> importing json from a .json file
 
 Tuesday
 - how to make use of break-out rooms
@@ -45,25 +45,25 @@ Tuesday
 - processing text/json
   - json.loads() takes JSON and returns Python structure
   - json.dumps() takes Python structure and returns JSON
-- persisting files: read/write/append/exclusive/overwrite, text, bytes, json
+> persisting files: read/write/append/exclusive/overwrite, text, bytes, json
 > databases
   see https://wiki.python.org/moin/DatabaseProgramming
 > other db connections
 - to fix: broken custom_read
-- Create (inc multiple and security, Read and Update (and DELETE) - CRUD operations
-- populate db with sample data
-- read and nicely format values from the db
+> Create (inc multiple and security, Read and Update (and DELETE) - CRUD operations
+> populate db with sample data
+> read and nicely format values from the db
 > explore 'typicode' API as a static data source for JSON
-- after lunch review exercise
+> after lunch review exercise
   ask questions, help each other, share code (screen-share)
 
 Wednesday
-- logging...
-- context manager - switch context e.g. for handling data input and output
+> logging...
+> context manager - switch context e.g. for handling data input and output
 - networking server/client (microservices)
 - overview of Flask
 - Testing: 
-  - doctest revisited
+  > doctest revisited
   see https://docs.python.org/3/library/doctest.html
   - unittest
 - after lunch lab exercise
@@ -80,8 +80,14 @@ Thursday
 - iter
 - named tuple
 - zip
-- end of course feedback
 
+
+
+
+
+
+- end of course feedback
+    https://apps.powerapps.com/play/17579985-153c-4727-b1f4-8b53e48b5e72?tenantId=92e84ceb-fbfd-47ab-be52-080c6b87953f&Type=ILT&ID=LZU1503352&OID=506747&Title=Machine%20Learning%20and%20Deep%20Learning%20using%20Python&Owner=Sachin%20Srivastava%20B
 
 
 
