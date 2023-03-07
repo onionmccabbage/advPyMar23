@@ -41,13 +41,15 @@ Monday
 Tuesday
 - how to make use of break-out rooms
 - functional programming: parameters
+- archictecture - how to decide where to break code down into modules
 - processing text/json
   - json.loads() takes JSON and returns Python structure
   - json.dumps() takes Python structure and returns JSON
 - persisting files: read/write/append/exclusive/overwrite, text, bytes, json
-- databases
+> databases
   see https://wiki.python.org/moin/DatabaseProgramming
 > other db connections
+- to fix: broken custom_read
 - Create (inc multiple and security, Read and Update (and DELETE) - CRUD operations
 - populate db with sample data
 - read and nicely format values from the db
