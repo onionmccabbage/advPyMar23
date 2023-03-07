@@ -1,6 +1,8 @@
 from contextlib import contextmanager
 import sys
 
+# we can also switch the context of sys.stdin
+
 @contextmanager # we use the context manager to decorate this function
 def redirectOutput(new_context):
     '''Send printed output to a different context then restore the default'''
