@@ -47,11 +47,11 @@ Tuesday
 - persisting files: read/write/append/exclusive/overwrite, text, bytes, json
 - databases
   see https://wiki.python.org/moin/DatabaseProgramming
-- other db connections
-- Create, Read and Update (and DELETE) - CRUD operations
+> other db connections
+- Create (inc multiple and security, Read and Update (and DELETE) - CRUD operations
 - populate db with sample data
 - read and nicely format values from the db
-- explore 'typicode' API as a static data source for JSON
+> explore 'typicode' API as a static data source for JSON
 - after lunch review exercise
   ask questions, help each other, share code (screen-share)
 

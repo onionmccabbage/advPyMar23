@@ -1,6 +1,6 @@
 import json
 
-from data_json import *
-# import ./data.json
+import json
+data = json.load(open('my_file.json', 'r'))
 
-# we should now have the entie structure imported
+# we should now have the entire structure imported
