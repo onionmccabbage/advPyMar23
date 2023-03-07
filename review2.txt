@@ -1,0 +1,37 @@
+Advanced Python Review 2 
+========================
+
+In a new package, write modules to implement a 'posts' service, with a database
+You can use the following API to get a very large number of 'posts':
+  https://jsonplaceholder.typicode.com/posts
+
+Details:
+Write a module which will add a new table to your existing database
+(you only need to run this once)
+Decide on a name for your table, such as 'posts'
+This new table needs columns for 'id' 'userId' 'title' and 'body'
+(id should be the primary key)
+Decide on suitable SQL data types for these fields (e.g. VARCHAR(256) for 'body')
+
+Write a module which will retrieve the JSON data for all the 'posts'
+Then iterate over the first thirty retrieved posts to populate your new table
+
+In another module, ask the user which userId they are interested in 
+Then retrieve and display all the 'posts' for that userId (use a 'WHERE' clause in the SQL)
+(You will need to validate that the userId is a positive integer between 1 and 3)
+
+Architecture:
+Use classes, functions and/or modules as you see fit
+Once the initial database has been created and populated, devise a class/module/function to encapslate neat ways to:
+- update existing 'post' items, e.g. changing the value of 'title'
+- create a new (valid) 'post' item
+- consider using 'contextmanager' to direct any printed output to a byte file instead
+
+Optional:
+Populate a new database table with the 'todos' from https://jsonplaceholder.typicode.com/todos
+Find a way to show only 'completed' todo items for a given userId
+Show all todos AND posts for a given userId
+Find all the incomplete todos in the database and set them to completed
+Consider how you could use sys.argv parameters to specify which data members to retrieve when running a module
+
+If you prefer, do the whole exercise with file read/write instead of databases
