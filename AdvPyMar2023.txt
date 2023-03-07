@@ -61,6 +61,7 @@ Wednesday
 > logging...
 > context manager - switch context e.g. for handling data input and output
 - networking server/client (microservices)
+- build a colletion of microservices and clients to implement an architecture
 - overview of Flask
 - Testing: 
   > doctest revisited
