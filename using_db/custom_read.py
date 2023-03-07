@@ -10,10 +10,13 @@ def custom_readDB():
             invalid = False
     # we use an SQL 'where' clause
     # NB inside SQL statements, strings MUST be in DOUBLE QUOTES
+    # WHERE creature="{whichCreature}" # exact match
+    # WHERE creature LIKE "{whichCreature}%" # begins with
+    # WHERE creature LIKE "%{whichCreature}" # ends with
     st = f'''
     SELECT creature, count, cost
     FROM zoo
-    WHERE creature="{whichCreature}"
+    WHERE creature LIKE "%{whichCreature}%"
     '''   
     # careful - suppose someone wrote malicious code - we MUST validate
     # now we execute our statement against our database access object
