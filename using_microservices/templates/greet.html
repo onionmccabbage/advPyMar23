@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Simple Web Page from Flask</title>
 </head>
 <body>
+    <article>
+        <section>
+            <h3>Here is a Web Page</h3>
+            <aside>
+                <!-- Flask has a micro-syntax for logic -->
+                {% if n %}
+                    <h4>Welcome {{n}}</h4>
+                {% endif %}
+            </aside>
+            <pre>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non illo fuga debitis accusantium doloribus, repellendus ex id deserunt dolorem. Nam consequatur fuga et dolorum neque vero molestiae eligendi numquam corrupti.</pre>
+        </section>
+    </article>
     
 </body>
 </html>

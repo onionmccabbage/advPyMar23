@@ -1,6 +1,7 @@
 # we may need to pip install flask
 # python -m pip install flask
 from flask import Flask
+from flask import render_template
 import requests # we may need this
 import json
 
@@ -35,10 +36,19 @@ def links():
     return content
 
 @app.route('/person')
+@app.route('/folk') # cover mis-spellings, diferrent product names, historical changes
 def person():
     # we can pass aa structure and Flask will encode it
     struct = {'name':'Timnit', 'age':42, 'member':True}
     return struct # Flask will parse this structure into encoded text
+
+@app.route('/greet')
+@app.route('/greet/<name>') # here we allow a parameter in the URL
+def greet(name='Grommet'):
+    # Flask will look in the 'templates' folder
+    return render_template('greet.html', n = name) # we can pass the URL parameter along to the HTML page
+
+
 
 if __name__ == '__main__':
     app.run() # this starts our Flask web server
