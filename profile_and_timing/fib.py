@@ -19,7 +19,7 @@ def fib1(n):
         # self-reference this function - we iteratively call the same function
         return ( fib1(n-1)+fib1(n-2) )
 # a global variable
-n=40 # 40 iterations took about half a minute on my laptop
+n=20 # 40 iterations took about half a minute on my laptop
 
 def fib2(n): # plenty of wvidence suggests this is the more performant approach
     '''return the fibonacci series up to n'''
