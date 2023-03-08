@@ -1,4 +1,4 @@
-Advanced Python Review 3: at least an hour, posibly all the way to 3:00
+Advanced Python Review 3: 
 =========================
 There is an API end-point here: https://swapi.dev/api  	   (it is a Python API written in Django)
 
@@ -16,7 +16,7 @@ Either ask the user for a category and an id, or read values in from a data file
 In all cases, check they are valid then make a get request and show the returned json
 
 Append a few of the returned data properties to a file (or a database if you prefer)
-  E.g. every category includes a 'name' property
+  E.g. every category has a 'name' property
   The 'people'   category includes 'hair_color'     and 'height'
   The 'planets'  category includes 'orbital_period' and 'population'
   The 'species'  category includes 'designation'    and 'homeworld'

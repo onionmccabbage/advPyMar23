@@ -41,6 +41,7 @@ class Menu:
             return self.which_id
         else:
             return 1 # default to id 1
+    # plenty of mileage to reduce code lines - abstract the repeated code to anotehr module
     def getPeople(self):
         self.category = 'people'
         result_d = json.loads(SwapiService.getSwapi(self.category, self.getId()))
@@ -52,7 +53,9 @@ class Menu:
         self.category = 'planets'
         result_d = json.loads(SwapiService.getSwapi(self.category, self.getId()))
         self.planets = Planets(result_d['name'], result_d['population'])
-        print ("Name: {} Population: {}".format(self.planets.name, self.planets.population))
+        result = print ("Name: {} Population: {}".format(self.planets.name, self.planets.population))
+        print(result)
+        self.appendData(result)
     def getSpecies(self):
         self.category = 'species'
         result_d = json.loads(SwapiService.getSwapi(self.category, self.getId()))
