@@ -2,6 +2,7 @@
 # python -m pip install flask
 from flask import Flask
 import requests # we may need this
+import json
 
 # we wil explore Flask architecture and create web URL links (known as 'routes')
 app = Flask(__name__) # any name will do, but by convention we use the module name
@@ -16,6 +17,24 @@ def home():
     <h2>Flask Home Web Page</h2>
     '''
     return content
+
+@app.route('/todos')
+def todos():
+    data = json.load(open('todos.json', 'r'))
+    data_j = json.dumps(data)
+    return data_j # we can only send string data
+
+@app.route('/links')
+def links():
+    content = '''
+    <h3>Visit these links</h3>
+    <a href='http://localhost:5000'>Top level</a> |
+    <a href='http://localhost:5000/home'>Home</a> |
+    <a href='http://localhost:5000/todos'>To do list</a>
+    '''
+    return content
+
+
 
 
 if __name__ == '__main__':
