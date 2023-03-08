@@ -1,0 +1,38 @@
+Advanced Python Review 3: 
+=========================
+There is an API end-point here: https://swapi.dev/api  	   (it is a Python API written in Django)
+
+It is used by passing parameters for 'category' and 'id' e.g.
+  https://swapi.dev/api/people/1
+  https://swapi.dev/api/species/3
+
+Category can be any one of 'people', 'planets', 'species', 'starships' or 'vehicles'
+The id can be any positive integer, but some id values will return no data
+NB Vehicles is problematic, but https://swapi.dev/api/vehicles/30 works
+
+Details
+=======
+Either ask the user for a category and an id, or read values in from a data file (or via a microservice)
+In all cases, check they are valid then make a get request and show the returned json
+
+Append a few of the returned data properties to a file (or a database if you prefer)
+  E.g. every category includes a 'name' property
+  The 'people'   category includes 'hair_color'     and 'height'
+  The 'planets'  category includes 'orbital_period' and 'population'
+  The 'species'  category includes 'designation'    and 'homeworld'
+  The 'starships category includes 'crew'           and 'pasengers'
+  The 'vehicles' category includes 'manufacturer'   and 'model'
+
+Optional
+--------
+Use our 'suggestion' microservice to populate the category field
+Architect your application so you have classes for 'People', 'Planets', 'Species', 'starships' and 'Vehicles'
+These classes could all descend from a common base class called 'Swapi'
+Populate an instance of the relevant class depending on the returned data
+(You could also encapsulate errors in a class too)
+Write your 'swapi_service' in a separate module, maybe as a separate microservice
+
+Super optional
+==============
+If you are comfortable with HTML, add some routes to our Flask server which present SWAPI data on a web page
+Pass parameters to the Flask route for category and number, then show a few of the returned values in a web page
