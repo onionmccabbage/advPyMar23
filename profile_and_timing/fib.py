@@ -2,6 +2,13 @@ import time # total time to execute
 import timeit # only includes time taken by Python - ignores system activity
 from functools import reduce
 
+# we can use cprofile to get a good idea of the profile of performance
+# To invoke cprofile
+#                    -o will force Python to optimize the module
+# python -m cProfile -o profile_output fib.py
+# we get a record of num calls, total time, time per call etc.
+
+
 def fib1(n):
     '''return the fibonacci series up to n
     1, 2, 3, 5, 8, 13, 21 ...
@@ -34,8 +41,8 @@ def averageTime():
 
 if __name__ == '__main__':
     s1 = time.time()
-    result = fib2(n)
+    result = fib1(n)
     s2 = time.time()
     print(f'{result} took about  {s2-s1} seconds')
     # ideally take a number of samples then take an average
-    print( f'100 iterations took an average time of {averageTime()}' )
+    # print( f'100 iterations took an average time of {averageTime()}' )
