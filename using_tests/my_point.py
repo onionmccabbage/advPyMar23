@@ -31,7 +31,7 @@ class Point(object):
     def hypot(self):
         h = (self.__x**2 + self.__y**2)**0.5 # raise to 0.5 will return square root
         return h
-    def moveBy(self, dx, dy):
+    def moveBy(self, dx=0, dy=0):
         ''' move the point by dx and dy'''
         self.x += dx
         self.y += dy
