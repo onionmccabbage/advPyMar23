@@ -34,8 +34,11 @@ def links():
     '''
     return content
 
-
-
+@app.route('/person')
+def person():
+    # we can pass aa structure and Flask will encode it
+    struct = {'name':'Timnit', 'age':42, 'member':True}
+    return struct # Flask will parse this structure into encoded text
 
 if __name__ == '__main__':
     app.run() # this starts our Flask web server
