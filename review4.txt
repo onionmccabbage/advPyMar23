@@ -25,13 +25,13 @@ Each thread should end up printing the class, so you see a bunch of weather repo
 
 Here is a sample city/country collection:
 [
-  {'city':'athlone', 'counntry':'ie'},
-  {'city':'malaga',  'counntry':'es'},
-  {'city':'paris',   'counntry':'fr'},
-  {'city':'sydney',  'counntry':'aus'},
-  {'city':'berlin',  'counntry':'de'},
-  {'city':'verona',  'counntry':'it'},
-  {'city':'mumbai',  'counntry':'in'}
+  {'city':'athlone', 'country':'ie'},
+  {'city':'malaga',  'country':'es'},
+  {'city':'paris',   'country':'fr'},
+  {'city':'sydney',  'country':'aus'},
+  {'city':'berlin',  'country':'de'},
+  {'city':'verona',  'country':'it'},
+  {'city':'mumbai',  'country':'in'}
 ]
 
 Optional:
