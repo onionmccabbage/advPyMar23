@@ -1,0 +1,54 @@
+Python Review Exercise 4
+========================
+We need a 'Weather' class
+Choose to extend 'Thread' or else implement a '__call__' method in your class
+Decide on properties and methods you think it should encapsulate, then build it
+
+Properties might include:
+- city (non-empty string of at least 2 letters)
+- country code (non-empty string of 2 or 3 letters)
+- description (non-empty string such as 'sunny', 'rainy' etc.)
+- temperature (floating point number)
+Methods might include:
+- Temperature in Kelvin (add 273 to the Celcius temperature)
+- Capitalize: return a property with initial capital letters
+Make use of @property decorators and __ name mangling
+Write a __str__ method that returns a nicely formatted report of the weather
+Exercise the code by instantiating some weather objects
+
+Then in another module, import your 'Weather' class
+Declare a collection of city-country pairs then iteratively start concurrent threads
+Each thread should be a separate instance of your 'Weather' class, 
+with values passed in for each property, and city/country from  your collection
+
+Each thread should end up printing the class, so you see a bunch of weather reports
+
+Here is a sample city/country collection:
+[
+  {'city':'athlone', 'counntry':'ie'},
+  {'city':'malaga',  'counntry':'es'},
+  {'city':'paris',   'counntry':'fr'},
+  {'city':'sydney',  'counntry':'aus'},
+  {'city':'berlin',  'counntry':'de'},
+  {'city':'verona',  'counntry':'it'},
+  {'city':'mumbai',  'counntry':'in'}
+]
+
+Optional:
+---------
+Validate the country code to be one of a tuple of permitted values
+- consider how to deal with invalid values - default vaue? throw an exception....?
+  e.g. permitted values could be ('ie', 'fr', 'de', 'aus', 'gb', 'it', 'es') 
+Also add properties for wind-speed and wind-direction 
+(maybe as a dictionary or a 'wind' class)
+Additional class methods might include:
+- commit to file: write the weather values to a common text file
+- retrieve from file: read back the values into a new weather instance 
+
+You will need to implement a lock when writing to the text file
+
+If Time:
+--------
+Extend your class into a 'CurrentWeather' class, which adds a date-time stamp to the weather
+Exercise the class to create several weather reports for a given location at different times
+Handle exceptions elegantly

@@ -73,10 +73,13 @@ Wednesday
 > pytest see https://docs.pytest.org/
 
 Thursday
+> check everyone familiar with Ericsson evaluation process?
 > profiling: timings etc. (cprofile)
-- multithreading, also limits of mutlithreading concurrency
-- the global Interpreter Lock (GIL) will affect threading performance
-- join many threads: iterate oever a lsit/tuple of threads
+> multithreading, also limits of mutlithreading concurrency
+> the global Interpreter Lock (GIL) will affect threading performance
+> join many threads: iterate oever a list/tuple of threads
+> other ways to call threads
+> daemon (gevent from ancient Python)
 - Python has -O to optimize code (especially usefull for threading)
 - after lunch lab exercise
 - logging - context mgr, often we log by time-stamp
@@ -84,7 +87,11 @@ Thursday
 > named tuple
 - zip
 
-
+Remember
+- db conn is a db access object
+- fin/fout is a file access object
+- thread is a thread access object
+- lock is a lock access object
 
 
 
