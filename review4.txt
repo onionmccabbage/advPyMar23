@@ -1,4 +1,4 @@
-Python Review Exercise 4
+Python Review Exercise 4 one hour - until 2:40
 ========================
 We need a 'Weather' class
 Choose to extend 'Thread' or else implement a '__call__' method in your class
@@ -20,6 +20,7 @@ Then in another module, import your 'Weather' class
 Declare a collection of city-country pairs then iteratively start concurrent threads
 Each thread should be a separate instance of your 'Weather' class, 
 with values passed in for each property, and city/country from  your collection
+(temperature and description can be arbitrary or random)
 
 Each thread should end up printing the class, so you see a bunch of weather reports
 
