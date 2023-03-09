@@ -73,7 +73,7 @@ Wednesday
 > pytest see https://docs.pytest.org/
 
 Thursday
-- profiling: timings etc. (cprofile)
+> profiling: timings etc. (cprofile)
 - multithreading, also limits of mutlithreading concurrency
 - the global Interpreter Lock (GIL) will affect threading performance
 - join many threads: iterate oever a lsit/tuple of threads
@@ -81,7 +81,7 @@ Thursday
 - after lunch lab exercise
 - logging - context mgr, often we log by time-stamp
 - iter
-- named tuple
+> named tuple
 - zip
 
 
