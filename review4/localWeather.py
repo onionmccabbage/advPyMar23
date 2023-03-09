@@ -3,10 +3,10 @@ from weather import Weather
 from threading import Lock
 import os
 
-
 # some gloabl assets
 lock = Lock()
 CURR_DIR = os.path.dirname(os.path.realpath(__file__))
+# print(f'running in {CURR_DIR}')
 
 class LocalWeather(Weather): # inherit from our Weather class
     def __init__(self, city='Athlone', country='ie', desc='fine', temp=12): # sensible defaults
@@ -34,11 +34,12 @@ class LocalWeather(Weather): # inherit from our Weather class
             self.__country = 'uk' # default
     def run(self):
         '''write to an exclusively locked text file'''
-        lock.acquire()
-        with open(f'{CURR_DIR}/weather.txt', 'at') as fout:
-            fout.write(self.__str__())
-            fout.write('\n') # add a new line character to the output file
-        lock.release()
+        # lock.acquire()
+        with lock:
+            with open(f'{CURR_DIR}/weather.txt', 'at') as fout:
+                fout.write(self.__str__())
+                fout.write('\n') # add a new line character to the output file
+        # lock.release()
 
 def main():
     l1 = LocalWeather('Edinburgh', 'uk', 'rainy', -3.7)
